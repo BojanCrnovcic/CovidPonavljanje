@@ -15,7 +15,8 @@ public class BMI {
     }
 
     public double getBMI() {
-        return tezina / visina * visina;
+        double bmi = tezina / (visina * visina);
+        return Math.round(bmi * 100) / 100.0;
     }
 
     public String getBMIStatus(){
